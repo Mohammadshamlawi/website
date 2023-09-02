@@ -1,151 +1,174 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-  <title>Library - Registration</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: darkred;
-  
-  }
-  
-  .container {
-    position: relative;
-    width: 450px;
-    background: orange;
-    padding: 20px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
-  }
-  
-  .title {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  .input-box {
-    position: relative;
-    margin-bottom: 30px;
-  }
-  
-  .details {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-    color: white ;
-    font-weight: bold;
-  }
-  
-  input[type="text"] {
-    width: 60%;
-    padding: 10px;
-    background: black;
-    border: none;
-    outline: none;
-    color: white;
-  }
-  input[type="email"] {
-    width: 80%;
-    padding: 10px;
-    background: black;
-    border: none;
-    outline: none;
-    color: white;
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library - Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: darkred;
+    }
 
-  }
-  input[type="password"] {
-    width: 80%;
-    padding: 10px;
-    background: black;
-    border: none;
-    outline: none;
-    color: white;
+    .container {
+      position: relative;
+      width: 450px;
+      background: orange;
+      padding: 20px;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    }
 
-  }
-  .gender
-  {
-    color: black;
-  }
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
 
-  
-  .button {
-    color: black;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  input[type="submit"] {
-    background: black;
-    color: #fff;
-    border: none; 
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  
-</style>
-<body>
-  <div class="container">
-    <div class="title">Library Registration</div>
-    <div class="content">
-      <form action="#">
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+    .input-box {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .details {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+      color: white;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 60%;
+      padding: 10px;
+      background: black;
+      border: none;
+      outline: none;
+      color: white;
+    }
+    input[type="email"] {
+      width: 80%;
+      padding: 10px;
+      background: black;
+      border: none;
+      outline: none;
+      color: white;
+    }
+    input[type="password"] {
+      width: 80%;
+      padding: 10px;
+      background: black;
+      border: none;
+      outline: none;
+      color: white;
+    }
+    .gender {
+      color: black;
+    }
+
+    .button {
+      color: black;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    input[type="submit"] {
+      background: black;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="title">Library Registration</div>
+      <div class="content">
+        <form action="register.php" method="post">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input
+                name="name"
+                type="text"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input
+                name="username"
+                type="text"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input
+                name="number"
+                type="text"
+                placeholder="Enter your number"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input
+                name="password"
+                type="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input
+                name="confirm_password"
+                type="password"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
           </div>
-          <div class="input-box">
-            <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="email" placeholder="Enter your email" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Password</span>
-            <input type="password" placeholder="Enter your password" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Confirm Password</span>
-            <input type="password" placeholder="Confirm your password" required>
-          </div>
-        </div>
-        <div class="details">
+          <div class="details">
             <span class="gender-title">Gender</span>
             <div class="category">
               <label for="dot-1">
-                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-1" value="male" />
                 <span class="dot one"></span>
                 <span class="gender">Male</span>
               </label>
               <label for="dot-2">
-                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-2" value="female" />
                 <span class="dot two"></span>
                 <span class="gender">Female</span>
               </label>
             </div>
           </div>
-        <div class="button">
-          <input type="submit" value="Register">
-        </div>
-      </form>
+          <div class="button">
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
